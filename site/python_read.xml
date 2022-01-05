@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esto es un comentario -->
+
+<!DOCTYPE cusrso [
+  <!ELEMENT curso (alumno, alumno)>
+    <!ATTLIST cusrso asignatura CDATA "">
+  <!ELEMENT alumno (nombre, calificacion, calificacion, calificacion)>
+    <!ATTLIST alumno id CDATA "0000">
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT califiacion (#PCDATA)>
+  <!ATTLIST califiacion examen CDATA "0">
+]>
+
+<cusrso asignatura="programacion">
+  <alumno id="001">
+    <nombre>Erik</nombre>
+    <califiacion examen="1">10</califiacion>
+    <califiacion examen="2">9.8</califiacion>
+    <califiacion examen="3">9.5</califiacion>
+  </alumno>
+  <alumno id="021">
+    <nombre>Monica</nombre>
+    <califiacion examen="1">9</califiacion>
+    <califiacion examen="2">10</califiacion>
+    <califiacion examen="3">8</califiacion> 
+  </alumno>
+</cusrso>
